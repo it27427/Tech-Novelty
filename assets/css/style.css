@@ -147,10 +147,21 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: var(--selection-bg);
+  color: var(--white);
+}
+
 html {
   font-size: 100%;
 }
 
 body {
+  background: var(--black);
+  color: var(--white);
   font-family: var(--primary-font);
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
