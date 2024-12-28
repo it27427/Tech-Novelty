@@ -7,10 +7,11 @@
   --darkbg: #09090b;
   --copyright-bg: #070422;
   --partnercard-bg: #202020;
-  --primary-border: rgb(97, 97, 96);
+  --primary-border: hsl(60, 1%, 38%);
   --oempartner-bg: #80c4e9;
   --ourcustomer-bg: #c4d7ff;
   --corporate-bg: #86d290;
+  --selection-bg: #b6b6b9;
 
   /* GRADIENT-BACKGROUNDS */
   --careerbg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
@@ -26,4 +27,68 @@
   --cardmask-bg: linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0)
       content-box exclude,
     linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0);
+}
+
+/* FONTS */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-BoldItalic.woff2') format('woff2'),
+    url('OpenSans-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Bold.woff2') format('woff2'),
+    url('OpenSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans SemiCondensed';
+  src: url('OpenSansSemiCondensed-Regular.woff2') format('woff2'),
+    url('OpenSansSemiCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Light.woff2') format('woff2'),
+    url('OpenSans-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-ExtraBoldItalic.woff2') format('woff2'),
+    url('OpenSans-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-Italic.woff2') format('woff2'),
+    url('OpenSans-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('OpenSans-ExtraBold.woff2') format('woff2'),
+    url('OpenSans-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
