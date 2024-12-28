@@ -1,8 +1,29 @@
 :root {
-  --careerbg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  --black: #000000;
+  --white: #ffffff;
+  --primary-bg: #3d91ae;
   --bg-currentcolor: #a100ff;
   --headerbg: #363e28;
   --darkbg: #09090b;
-  --black: #000000;
-  --white: #ffffff;
+  --copyright-bg: #070422;
+  --partnercard-bg: #202020;
+  --primary-border: rgb(97, 97, 96);
+  --oempartner-bg: #80c4e9;
+  --ourcustomer-bg: #c4d7ff;
+  --corporate-bg: #86d290;
+
+  /* GRADIENT-BACKGROUNDS */
+  --careerbg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  --contact-bg: linear-gradient(rgba(0, 0, 0, 0.9), rgba(8, 4, 39, 0.9));
+  --servicescerd-border: linear-gradient(
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.9)
+  );
+  --servicescard-hover-border: linear-gradient(
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.1)
+  );
+  --cardmask-bg: linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0)
+      content-box exclude,
+    linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0);
 }
