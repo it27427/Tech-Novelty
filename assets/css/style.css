@@ -139,3 +139,18 @@
   font-style: italic;
   font-display: swap;
 }
+
+/* RESETTINGS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: var(--primary-font);
+}
