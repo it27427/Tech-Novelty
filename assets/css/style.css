@@ -984,3 +984,7 @@ main {
     transform: translateY(2.25rem);
   }
 }
+
+main {
+  min-height: 400vh;
+}

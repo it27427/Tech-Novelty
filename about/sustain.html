@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech Novelty</title>
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- SWIPER-CSS -->
+    <link rel="stylesheet" href="assets/css/swiper/swiper-bundle.min.css" />
+    <!-- BOOTSTRAP-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css" />
+    <!-- CUSTOM-CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- PRELOADER-COMPONENT-START -->
+    <div class="preloader" id="preloader">
+      <div class="loader">
+        <div class="spinner-border" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    </div>
+    <!-- PRELOADER-COMPONENT-END -->
+
+    <!-- HEADER-COMPONENT-START -->
+    <header class="header">
+      <div class="headercontent">
+        <div class="techcontainer">
+          <div class="d-flex align-items-center">
+            <!-- MOBILE-MENU-START -->
+            <div class="d-lg-none d-block">
+              <!-- HAMBURGER-BUTTON -->
+              <button
+                type="button"
+                class="btn-hamburger"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu"
+              >
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  color="#fff"
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: rgb(255, 255, 255)"
+                >
+                  <path
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-miterlimit="10"
+                    stroke-width="48"
+                    d="M88 152h336M88 256h336M88 360h336"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- HAMBURGER-MENU -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="mobileMenu"
+                aria-labelledby="mobileMenu"
+              >
+                <div class="offcanvas-header justify-content-end">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  >
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M18 6 6 18"></path>
+                      <path d="m6 6 12 12"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="offcanvas-body p-0">
+                  <div class="d-flex flex-column">
+                    <a href="index.html" class="mobilelink activelink">Home</a>
+
+                    <!-- DROPDOWN-MENUS -->
+                    <div class="accordion" id="accordionDropdownMenu">
+                      <!-- ABOUT-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseAbout"
+                            aria-expanded="false"
+                            aria-controls="collapseAbout"
+                          >
+                            About
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseAbout"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
+                        >
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/tech-novelty.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  About tech.novelty solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/leadership.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Leadership
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/vision.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Company vision
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/mission.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Company mission
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/values.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Company values
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/partners.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Our OEM Partners
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/customer.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Our Customers
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/sustain.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Corporate Sustainability
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- PRODUCTS-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseProducts"
+                            aria-expanded="false"
+                            aria-controls="collapseProducts"
+                          >
+                            Products
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseProducts"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
+                        >
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="products/microsoft.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Microsoft Dynamics 365
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="products/oracle.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Oracle AML/ALM
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- SERVICES-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseServices"
+                            aria-expanded="false"
+                            aria-controls="collapseServices"
+                          >
+                            Services
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseServices"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
+                        >
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/infrastructure.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Infrastructure Solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/managed.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Managed Services
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/intelligent.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Intelligent Network Solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/backup.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Backup and Recovery Solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/digital.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Digital Transformation
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/cybersecurity.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Cybersecurity Assurance
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/data-analytics.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Data Analytics & Insights
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/aiml.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  AI/ML Solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/emerging.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Emerging Technologies and IoT
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/smart.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Smart Office Solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/aml-alm.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  AML/ALM Solutions
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- CONSULTING-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseConsulting"
+                            aria-expanded="false"
+                            aria-controls="collapseConsulting"
+                          >
+                            Consulting
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseConsulting"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
+                        >
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/it-strategy.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  IT Strategy & Planning
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/cloud-computing.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Cloud Computing Solutions
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/it-governance.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  IT Governance & Compliance
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/application-design.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Application Design & Deployment
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/enterprise-resource.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Enterprise Resource Planning
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/project-management.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Project Management
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- INDUSTRIES-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseIndustries"
+                            aria-expanded="false"
+                            aria-controls="collapseIndustries"
+                          >
+                            Industries
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseIndustries"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
+                        >
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/banking.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Banking & NBFIs
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/telecommunication.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Telecommunication
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/government.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Government
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/health.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Health & Pharmaceuticals
+                                </a>
+                              </li>
+
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/medium.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Medium and Large Enterprises
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- MOBILE-MENU-END -->
+
+            <!-- BRAND-LOGO-START -->
+            <div class="logosize">
+              <a href="index.html" class="brandlogo">
+                <img src="assets/images/logo/logo.png" alt="BRAND-LOGO" />
+              </a>
+            </div>
+            <!-- BRAND-LOGO-END -->
+
+            <!-- DESKTOP-MENU-START -->
+            <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+              <div class="desktopmenu">
+                <ul class="desktoplist">
+                  <li class="desktoplist-item">
+                    <a href="index.html" class="homelink activelink">Home</a>
+                  </li>
+
+                  <!-- ABOUT-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">About</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- ABOUT-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">About</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/tech-novelty.html"
+                                  class="dropdownlist-link"
+                                >
+                                  About tech.novelty solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/leadership.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Leadership
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a href="about/vision.html" class="dropdownlist-link">
+                                  Company vision
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/mission.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Company mission
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a href="about/values.html" class="dropdownlist-link">
+                                  Company values
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/partners.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Our OEM Partners
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/customer.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Our Customers
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/sustain.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Corporate Sustainability
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- PRODUCTS-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Products</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- PRODUCTS-DROPDOWN-CONTENT -->
+                     <div class="dropdowncontent">
+                      <div class="techcontainer">
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Products</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="products/microsoft.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Microsoft Dynamics 365
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="products/oracle.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Oracle AML/ALM
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- SERVICES-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Services</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- SERVICES-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">                        
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Services</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/infrastructure.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Infrastructure Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/managed.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Managed Services
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/intelligent.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Intelligent Network Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/backup.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Backup and Recovery Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/digital.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Digital Transformation
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/cybersecurity.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Cybersecurity Assurance
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/data-analytics.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Data Analytics & Insights
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/aiml.html"
+                                  class="dropdownlist-link"
+                                >
+                                  AI/ML Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/emerging.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Emerging Technologies and IoT
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/smart.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Smart Office Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/aml-alm.html"
+                                  class="dropdownlist-link"
+                                >
+                                  AML/ALM Solutions
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- CONSULTING-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Consulting</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- CONSULTING-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">                        
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Consulting</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/it-strategy.html"
+                                  class="dropdownlist-link"
+                                >
+                                  IT Strategy & Planning
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/cloud-computing.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Cloud Computing Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/it-governance.html"
+                                  class="dropdownlist-link"
+                                >
+                                  IT Governance & Compliance
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/application-design.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Application Design & Deployment
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/enterprise-resource.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Enterprise Resource Planning
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/project-management.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Project Management
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- INDUSTRIES-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Industries</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- INDUSTRIES-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Industries</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/banking.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Banking & NBFIs
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/telecommunication.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Telecommunication
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/government.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Government
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/health.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Health & Pharmaceuticals
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/medium.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Medium and Large Enterprises
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- DESKTOP-MENU-END -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER-COMPONENT-END -->
+
+    <!-- MAIN-COMPONENT-START -->
+    <main></main>
+    <!-- MAIN-COMPONENT-END -->
+
+    <!-- FOOTER-COMPONENT-START -->
+    <footer class="footer">
+      <div class="footer-content">
+        <!-- FOOTER-MENU -->
+        <div class="footermenu">
+          <div class="techcontainer">
+            <ul class="footerlist">
+              <li class="footerlist-item">
+                <a href="#career" class="footerlist-link">Careers</a>
+              </li>
+
+              <li class="footerlist-item">
+                <a href="#partner" class="footerlist-link">
+                  Partners & Alliances
+                </a>
+              </li>
+
+              <li class="footerlist-item">
+                <a href="#contact" class="footerlist-link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FOOTER-DETAILS -->
+        <div class="techcontainer">
+          <div class="footerdetails">
+            <!-- FOOTER-LOGO -->
+            <figure class="footerlogo">
+              <img src="assets/images/logo/footerLogo.png" alt="BRAND-LOGO" />
+            </figure>
+
+            <!-- NAVIGATION -->
+            <div class="footmenu">
+              <div class="footmenu-header">
+                <h5 class="footertitle">Navigation</h5>
+              </div>
+
+              <div class="footmenu-body">
+                <ul class="footlist">
+                  <li class="footlist-item">
+                    <a href="index.html" class="footlist-link">
+                      Home
+                    </a>
+                  </li>
+
+                  <li class="footlist-item">
+                    <a href="about.html" class="footlist-link">
+                      About
+                    </a>
+                  </li>
+
+                  <li class="footlist-item">
+                    <a href="#mission" class="footlist-link">
+                      Mission & Vission
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- QUICK-LINKS -->
+            <div class="footmenu">
+              <div class="footmenu-header">
+                <h5 class="footertitle">Quick Links</h5>
+              </div>
+
+              <div class="footmenu-body">
+                <ul class="footlist">
+                  <li class="footlist-item">
+                    <a href="services.html" class="footlist-link">
+                      Services
+                    </a>
+                  </li>
+
+                  <li class="footlist-item">
+                    <a href="consulting.html" class="footlist-link">
+                      Consulting
+                    </a>
+                  </li>
+
+                  <li class="footlist-item">
+                    <a href="industries.html" class="footlist-link">
+                      Industries
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- FOLLOW-US -->
+            <div class="follow">
+              <div class="follow-header">
+                <h5 class="footertitle">Follow Us</h5>
+                <p class="followtext">
+                  Stay updated with our latest news and innovations
+                </p>
+              </div>
+
+              <div class="footmenu-body">
+                <ul class="sociallist">
+                  <li class="sociallist-item">
+                    <a
+                      href="https://www.facebook.com/"
+                      target="_blank"
+                      class="sociallist-link"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Follow on Facebook"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 512 512"
+                        color="#fff"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(255, 255, 255)"
+                      >
+                        <path
+                          d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="sociallist-item">
+                    <a
+                      href="https://www.linkedin.com/"
+                      target="_blank"
+                      class="sociallist-link"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Follow on Linkedin"
+                    >
+                      <svg
+                        stroke="currentColor"
+                        fill="currentColor"
+                        stroke-width="0"
+                        viewBox="0 0 448 512"
+                        color="#fff"
+                        height="24"
+                        width="24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(255, 255, 255)"
+                      >
+                        <path
+                          d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                        ></path>
+                      </svg>
+                    </a>
+                  </li>
+
+                  <li class="sociallist-item">
+                    <a
+                      href="https://x.com/"
+                      target="_blank"
+                      class="sociallist-link"
+                      data-bs-toggle="tooltip"
+                      data-bs-placement="top"
+                      data-bs-title="Follow on Twitter X"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        version="1.1"
+                        id="Layer_1"
+                        width="24px"
+                        height="24px"
+                        viewBox="0 0 24 24"
+                        style="enable-background: new 0 0 24 24"
+                        xml:space="preserve"
+                      >
+                        <path
+                          d="M14.095479,10.316482L22.286354,1h-1.940718l-7.115352,8.087682L7.551414,1H1l8.589488,12.231093L1,23h1.940717  l7.509372-8.542861L16.448587,23H23L14.095479,10.316482z M11.436522,13.338465l-0.871624-1.218704l-6.924311-9.68815h2.981339  l5.58978,7.82155l0.867949,1.218704l7.26506,10.166271h-2.981339L11.436522,13.338465z"
+                          fill="#fff"
+                          />
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT-CONTENT -->
+      <div class="copyright-content">
+        <div class="techcontainer">
+          <div class="d-flex align-items-center justify-content-center">
+            <p class="textcopyright">
+              powered by
+              <a href="https://thinkcrypt.io/" target="_blank">thinkcrypt.io</a>
+              &copy; 2024 - <span class="currentYear"></span>
+              | all right reserved
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER-COMPONENT-END -->
+
+    <!-- PRELOADER-JS -->
+    <script src="assets/js/preloader/preloader.js"></script>
+    <!-- SWIPER-JS -->
+    <script src="assets/js/swiper/swiper-bundle.min.js"></script>
+    <!-- BOOTSTRAP-JS -->
+    <script src="assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+    <!-- COPYRIGHT-JS -->
+    <script src="assets/js/copyright/copyright.js"></script>
+    <!-- TOOLTIP-JS -->
+    <script src="assets/js/tooltip/tooltip.js"></script>
+  </body>
+</html>
