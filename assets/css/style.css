@@ -505,6 +505,33 @@ figure {
   outline: none;
 }
 
+/* PRELOADER-COMPONENT */
+.preloader {
+  background: var(--black);
+  width: 100vw;
+  height: var(--size-vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+}
+
+.loader {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner-border {
+  --bs-spinner-width: 2.5rem;
+  --bs-spinner-height: 2.5rem;
+  --bs-spinner-border-width: 0.125rem;
+}
+
 /* HEADER COMPONENT */
 .header {
   background: var(--black);
@@ -604,7 +631,8 @@ figure {
 }
 
 main {
-  min-height: 400vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* DESKTOP-MENU */
@@ -623,5 +651,6 @@ main {
 
   .logosize {
     flex-grow: 0;
+    max-width: 11.563rem;
   }
 }
