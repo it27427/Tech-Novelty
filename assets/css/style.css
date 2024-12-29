@@ -8,10 +8,12 @@
   --copyright-bg: #070422;
   --partnercard-bg: #202020;
   --primary-border: hsl(60, 1%, 38%);
+  --footer-border: rgb(97, 97, 96);
   --oempartner-bg: #80c4e9;
   --ourcustomer-bg: #c4d7ff;
   --corporate-bg: #86d290;
   --selection-bg: #b6b6b9;
+  --footer-text: rgb(233, 233, 233);
   --primary-font: 'Open Sans', serif;
 
   /* GRADIENT-BACKGROUNDS */
@@ -398,6 +400,11 @@ ol {
   padding: 0;
 }
 
+img {
+  max-width: var(--size-full);
+  height: auto;
+}
+
 h1,
 h2,
 h3,
@@ -446,8 +453,6 @@ figure {
 }
 
 .brandlogo img {
-  max-width: var(--size-full);
-  height: auto;
   object-fit: contain;
 }
 
@@ -752,7 +757,173 @@ main {
   text-decoration: underline;
 }
 
+/* FOOTER-COMPONENT */
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  background: var(--primary-bg);
+  display: flex;
+  flex-direction: column;
+}
+
+.footermenu {
+  border-bottom: solid 0.0625rem var(--footer-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 0.0625rem var(--footer-border);
+  width: var(--size-full);
+  height: 3.375rem;
+}
+
+.footmenu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.footertitle {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footlist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footlist-link {
+  color: var(--footer-text);
+  font-weight: 400;
+  font-size: 1rem;
+  transition: all var(--durations-slow) ease-in-out;
+}
+
+.footlist-link:hover {
+  color: var(--white);
+}
+
+.footerlist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footerlist-link {
+  color: var(--footer-text);
+  font-size: 0.75rem;
+  padding-inline: 1rem;
+  transition: all var(--durations-slow) ease-in-out;
+}
+
+.footerlist-link:hover {
+  color: var(--white);
+}
+
+.follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.follow-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  text-align: center;
+}
+
+.followtext {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.sociallist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sociallist-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sociallist-link svg {
+  width: 100%;
+  height: 100%;
+}
+
+.footerdetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding-block: 3rem;
+}
+
+.footerlogo {
+  display: flex;
+  justify-content: center;
+  max-width: var(--size-full);
+  width: 15.625rem;
+  height: 3.25rem;
+  margin-inline: auto;
+}
+
+.footerlogo img {
+  object-fit: contain;
+}
+
+.copyright-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 0.0625rem var(--footer-border);
+  width: var(--size-full);
+  height: 3.375rem;
+}
+
+.textcopyright {
+  color: var(--white);
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+.textcopyright a {
+  color: inherit;
+  font-size: inherit;
+}
+
 /* RESPONSIVE MEDIA-QUERIES */
+/* MIN-WIDTH (768PX) */
+@media screen and (min-width: 48rem) {
+  .footerlist-link {
+    font-size: 0.875rem;
+  }
+
+  .footerdetails {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+
 /* MIN-WIDTH (1024PX) */
 @media screen and (min-width: 64rem) {
   .techcontainer {
@@ -763,7 +934,30 @@ main {
     flex-grow: 0;
     max-width: 11.563rem;
   }
+
+  .footerlist-link {
+    font-size: 1rem;
+  }
+
+  .footerdetails {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .footerlogo {
+    margin-inline: 0;
+    height: auto;
+  }
+
+  .footmenu {
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+  }
 }
+
+/* MIN-WIDTH (1280PX) */
+/* @media screen and (min-width: 80) {} */
 
 /* KEYFRAME-ANIMATIONS */
 @keyframes slideDown {
