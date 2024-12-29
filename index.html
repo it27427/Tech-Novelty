@@ -24,7 +24,13 @@
           <!-- HAMBURGER-MENU-START -->
           <div class="d-lg-none d-block">
             <!-- HAMBURGER-BUTTOn -->
-            <button type="button" class="btn-hamburger">
+            <button
+              type="button"
+              class="btn-hamburger"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileMenu"
+              aria-controls="mobileMenu"
+            >
               <svg
                 stroke="currentColor"
                 fill="currentColor"
@@ -47,13 +53,44 @@
             </button>
 
             <!-- MOBILE-MENU -->
+            <div
+              class="offcanvas offcanvas-start"
+              tabindex="-1"
+              id="mobileMenu"
+              aria-labelledby="mobileMenu"
+            >
+              <div class="offcanvas-header justify-content-end">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <div class="offcanvas-body"></div>
+            </div>
           </div>
           <!-- HAMBURGER-MENU-END -->
-  
+
           <!-- BRAND-LOGO-START -->
           <div class="logosize">
             <a href="index.html" class="brandlogo">
-              <img src="assets/images/logo/logo.png" alt="BRAND-LOGO">
+              <img src="assets/images/logo/logo.png" alt="BRAND-LOGO" />
             </a>
           </div>
           <!-- BRAND-LOGO-END -->
