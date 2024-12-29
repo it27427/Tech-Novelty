@@ -386,9 +386,13 @@ body {
   padding-inline: 1rem;
 }
 
+.btn-hamburger {
+}
+
 /* HEADER COMPONENT */
 .header {
-  background: var(--headerbg);
+  background: var(--black);
+  box-shadow: var(--shadows-md);
   display: flex;
   align-items: center;
 
