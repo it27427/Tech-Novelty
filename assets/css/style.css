@@ -415,6 +415,10 @@ figure {
   padding-inline: 1rem;
 }
 
+.headercontent {
+  position: relative;
+}
+
 .btn-hamburger {
   background: transparent;
   border: none;
@@ -638,26 +642,39 @@ main {
 .desktoplist {
   display: flex;
   align-items: center;
-  gap: 2rem;
 }
 
 .homelink {
   color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.2rem;
   font-weight: 400;
+  height: 5rem;
+  padding-inline: 1rem;
 }
 
 .homelink:hover {
   color: var(--gray-300);
 }
 
+.desktoplist-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 5rem;
+}
+
 .desktoplist-link {
+  height: 5rem;
   background: var(--color-transparent);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  padding-inline: 1rem;
   text-align: center;
 }
 
@@ -682,11 +699,18 @@ main {
   height: 100%;
 }
 
-.desktoplist-link:active .linkicon,
-.desktoplist-link:focus .linkicon {
+.desktoplist-item:hover .desktoplist-link .linkicon {
   transform: rotateX(180deg);
 }
 
+.techcontainer .desktopdropdown {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: var(--size-full);
+  height: 70vh;
+  background: var(--black-alpha-800);
+}
 /* RESPONSIVE MEDIA-QUERIES */
 /* MIN-WIDTH (1024PX) */
 @media screen and (min-width: 64rem) {
