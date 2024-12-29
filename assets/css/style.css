@@ -499,10 +499,6 @@ figure {
   width: 0.5rem;
 }
 
-main {
-  min-height: 400vh;
-}
-
 .btn-close:focus,
 .btn-close:active {
   box-shadow: none;
@@ -605,6 +601,17 @@ main {
 
 .accordion-button:focus {
   box-shadow: none;
+}
+
+main {
+  min-height: 400vh;
+}
+
+/* DESKTOP-MENU */
+.desktopmenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 /* RESPONSIVE MEDIA-QUERIES */
