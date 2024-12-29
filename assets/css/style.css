@@ -164,3 +164,27 @@ body {
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
+
+/* UTILITIES */
+.techcontainer {
+  padding-inline: 1rem;
+}
+
+/* HEADER COMPONENT */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--headerbg);
+  height: 5rem;
+  z-index: 999;
+}
+
+/* RESPONSIVE MEDIA-QUERIES */
+/* MIN-WIDTH (1024PX) */
+@media screen and (min-width: 64rem) {
+  .techcontainer {
+    padding-inline: 6rem;
+  }
+}
