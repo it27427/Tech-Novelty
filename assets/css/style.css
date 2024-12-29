@@ -381,12 +381,51 @@ body {
   scroll-snap-type: y mandatory;
 }
 
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
 /* UTILITIES */
 .techcontainer {
+  width: var(--size-full);
   padding-inline: 1rem;
 }
 
 .btn-hamburger {
+  background: transparent;
+  border: none;
+  width: 2.25rem;
+  height: 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logosize {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.brandlogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 14rem;
+  height: auto;
+}
+
+.brandlogo img {
+  max-width: var(--size-full);
+  height: auto;
+  object-fit: contain;
 }
 
 /* HEADER COMPONENT */
@@ -409,5 +448,9 @@ body {
 @media screen and (min-width: 64rem) {
   .techcontainer {
     padding-inline: 6rem;
+  }
+
+  .logosize {
+    flex-grow: 0;
   }
 }
