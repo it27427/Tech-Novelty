@@ -5,7 +5,7 @@ var heroSlider = new Swiper('.heroSlider', {
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 3000,
+    delay: 3500,
     disableOnInteraction: false
   },
   navigation: {
