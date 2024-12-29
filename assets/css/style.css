@@ -188,6 +188,24 @@
   --font-size-8xl: 6rem;
   --font-size-9xl: 8rem;
 
+  /* VIEWPORT-SIZES */
+  --size-full: 100%;
+  --size-dvh: 100dvh;
+  --size-svh: 100svh;
+  --size-lvh: 100lvh;
+  --size-dvw: 100dvw;
+  --size-svw: 100svw;
+  --size-lvw: 100lvw;
+  --size-vw: 100vw;
+  --size-vh: 100vh;
+
+  /* BREAKPOINT-SIZES */
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
   /* TRANSITION-DURATIONS */
   --durations-fastest: 50ms;
   --durations-faster: 100ms;
