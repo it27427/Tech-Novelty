@@ -29,490 +29,492 @@
 
     <!-- HEADER-COMPONENT-START -->
     <header class="header">
-      <div class="techcontainer">
-        <div class="d-flex align-items-center headercontent">
-          <!-- MOBILE-MENU-START -->
-          <div class="d-lg-none d-block">
-            <!-- HAMBURGER-BUTTON -->
-            <button
-              type="button"
-              class="btn-hamburger"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#mobileMenu"
-              aria-controls="mobileMenu"
-            >
-              <svg
-                stroke="currentColor"
-                fill="currentColor"
-                stroke-width="0"
-                viewBox="0 0 512 512"
-                color="#fff"
-                height="24"
-                width="24"
-                xmlns="http://www.w3.org/2000/svg"
-                style="color: rgb(255, 255, 255)"
+      <div class="headercontent">
+        <div class="techcontainer">
+          <div class="d-flex align-items-center">
+            <!-- MOBILE-MENU-START -->
+            <div class="d-lg-none d-block">
+              <!-- HAMBURGER-BUTTON -->
+              <button
+                type="button"
+                class="btn-hamburger"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#mobileMenu"
+                aria-controls="mobileMenu"
               >
-                <path
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-miterlimit="10"
-                  stroke-width="48"
-                  d="M88 152h336M88 256h336M88 360h336"
-                ></path>
-              </svg>
-            </button>
-
-            <!-- HAMBURGER-MENU -->
-            <div
-              class="offcanvas offcanvas-start"
-              tabindex="-1"
-              id="mobileMenu"
-              aria-labelledby="mobileMenu"
-            >
-              <div class="offcanvas-header justify-content-end">
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Close"
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 512 512"
+                  color="#fff"
+                  height="24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                  style="color: rgb(255, 255, 255)"
                 >
-                  <svg
-                    stroke="currentColor"
+                  <path
                     fill="none"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
                     stroke-linecap="round"
-                    stroke-linejoin="round"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
+                    stroke-miterlimit="10"
+                    stroke-width="48"
+                    d="M88 152h336M88 256h336M88 360h336"
+                  ></path>
+                </svg>
+              </button>
+
+              <!-- HAMBURGER-MENU -->
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="mobileMenu"
+                aria-labelledby="mobileMenu"
+              >
+                <div class="offcanvas-header justify-content-end">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
                   >
-                    <path d="M18 6 6 18"></path>
-                    <path d="m6 6 12 12"></path>
-                  </svg>
-                </button>
-              </div>
+                    <svg
+                      stroke="currentColor"
+                      fill="none"
+                      stroke-width="2"
+                      viewBox="0 0 24 24"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      height="1em"
+                      width="1em"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M18 6 6 18"></path>
+                      <path d="m6 6 12 12"></path>
+                    </svg>
+                  </button>
+                </div>
 
-              <div class="offcanvas-body p-0">
-                <div class="d-flex flex-column">
-                  <a href="index.html" class="mobilelink activelink">Home</a>
+                <div class="offcanvas-body p-0">
+                  <div class="d-flex flex-column">
+                    <a href="index.html" class="mobilelink activelink">Home</a>
 
-                  <!-- DROPDOWN-MENUS -->
-                  <div class="accordion" id="accordionDropdownMenu">
-                    <!-- ABOUT-DROPDOWN -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseAbout"
-                          aria-expanded="false"
-                          aria-controls="collapseAbout"
+                    <!-- DROPDOWN-MENUS -->
+                    <div class="accordion" id="accordionDropdownMenu">
+                      <!-- ABOUT-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseAbout"
+                            aria-expanded="false"
+                            aria-controls="collapseAbout"
+                          >
+                            About
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseAbout"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
                         >
-                          About
-                        </button>
-                      </h2>
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/tech-novelty.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  About tech.novelty solutions
+                                </a>
+                              </li>
 
-                      <div
-                        id="collapseAbout"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionDropdownMenu"
-                      >
-                        <div class="accordion-body">
-                          <ul class="mobiledropdown">
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/tech-novelty.html"
-                                class="mobiledropdown-link"
-                              >
-                                About tech.novelty solutions
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/leadership.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Leadership
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/leadership.html"
-                                class="mobiledropdown-link"
-                              >
-                                Leadership
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/vision.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Company vision
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/vision.html"
-                                class="mobiledropdown-link"
-                              >
-                                Company vision
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/mission.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Company mission
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/mission.html"
-                                class="mobiledropdown-link"
-                              >
-                                Company mission
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/values.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Company values
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/values.html"
-                                class="mobiledropdown-link"
-                              >
-                                Company values
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/partners.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Our OEM Partners
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/partners.html"
-                                class="mobiledropdown-link"
-                              >
-                                Our OEM Partners
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/customer.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Our Customers
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/customer.html"
-                                class="mobiledropdown-link"
-                              >
-                                Our Customers
-                              </a>
-                            </li>
-
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="about/sustain.html"
-                                class="mobiledropdown-link"
-                              >
-                                Corporate Sustainability
-                              </a>
-                            </li>
-                          </ul>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="about/sustain.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Corporate Sustainability
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- PRODUCTS-DROPDOWN -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseProducts"
-                          aria-expanded="false"
-                          aria-controls="collapseProducts"
+                      <!-- PRODUCTS-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseProducts"
+                            aria-expanded="false"
+                            aria-controls="collapseProducts"
+                          >
+                            Products
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseProducts"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
                         >
-                          Products
-                        </button>
-                      </h2>
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="products/microsoft.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Microsoft Dynamics 365
+                                </a>
+                              </li>
 
-                      <div
-                        id="collapseProducts"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionDropdownMenu"
-                      >
-                        <div class="accordion-body">
-                          <ul class="mobiledropdown">
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="products/microsoft.html"
-                                class="mobiledropdown-link"
-                              >
-                                Microsoft Dynamics 365
-                              </a>
-                            </li>
-
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="products/oracle.html"
-                                class="mobiledropdown-link"
-                              >
-                                Oracle AML/ALM
-                              </a>
-                            </li>
-                          </ul>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="products/oracle.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Oracle AML/ALM
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- SERVICES-DROPDOWN -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseServices"
-                          aria-expanded="false"
-                          aria-controls="collapseServices"
+                      <!-- SERVICES-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseServices"
+                            aria-expanded="false"
+                            aria-controls="collapseServices"
+                          >
+                            Services
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseServices"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
                         >
-                          Services
-                        </button>
-                      </h2>
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/infrastructure.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Infrastructure Solutions
+                                </a>
+                              </li>
 
-                      <div
-                        id="collapseServices"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionDropdownMenu"
-                      >
-                        <div class="accordion-body">
-                          <ul class="mobiledropdown">
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/infrastructure.html"
-                                class="mobiledropdown-link"
-                              >
-                                Infrastructure Solutions
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/managed.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Managed Services
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/managed.html"
-                                class="mobiledropdown-link"
-                              >
-                                Managed Services
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/intelligent.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Intelligent Network Solutions
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/intelligent.html"
-                                class="mobiledropdown-link"
-                              >
-                                Intelligent Network Solutions
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/backup.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Backup and Recovery Solutions
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/backup.html"
-                                class="mobiledropdown-link"
-                              >
-                                Backup and Recovery Solutions
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/digital.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Digital Transformation
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/digital.html"
-                                class="mobiledropdown-link"
-                              >
-                                Digital Transformation
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/cybersecurity.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Cybersecurity Assurance
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/cybersecurity.html"
-                                class="mobiledropdown-link"
-                              >
-                                Cybersecurity Assurance
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/data-analytics.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Data Analytics & Insights
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/data-analytics.html"
-                                class="mobiledropdown-link"
-                              >
-                                Data Analytics & Insights
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/aiml.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  AI/ML Solutions
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/aiml.html"
-                                class="mobiledropdown-link"
-                              >
-                                AI/ML Solutions
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/emerging.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Emerging Technologies and IoT
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/emerging.html"
-                                class="mobiledropdown-link"
-                              >
-                                Emerging Technologies and IoT
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/smart.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Smart Office Solutions
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/smart.html"
-                                class="mobiledropdown-link"
-                              >
-                                Smart Office Solutions
-                              </a>
-                            </li>
-
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="services/aml-alm.html"
-                                class="mobiledropdown-link"
-                              >
-                                AML/ALM Solutions
-                              </a>
-                            </li>
-                          </ul>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="services/aml-alm.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  AML/ALM Solutions
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- CONSULTING-DROPDOWN -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseConsulting"
-                          aria-expanded="false"
-                          aria-controls="collapseConsulting"
+                      <!-- CONSULTING-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseConsulting"
+                            aria-expanded="false"
+                            aria-controls="collapseConsulting"
+                          >
+                            Consulting
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseConsulting"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
                         >
-                          Consulting
-                        </button>
-                      </h2>
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/it-strategy.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  IT Strategy & Planning
+                                </a>
+                              </li>
 
-                      <div
-                        id="collapseConsulting"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionDropdownMenu"
-                      >
-                        <div class="accordion-body">
-                          <ul class="mobiledropdown">
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="consulting/it-strategy.html"
-                                class="mobiledropdown-link"
-                              >
-                                IT Strategy & Planning
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/cloud-computing.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Cloud Computing Solutions
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="consulting/cloud-computing.html"
-                                class="mobiledropdown-link"
-                              >
-                                Cloud Computing Solutions
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/it-governance.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  IT Governance & Compliance
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="consulting/it-governance.html"
-                                class="mobiledropdown-link"
-                              >
-                                IT Governance & Compliance
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/application-design.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Application Design & Deployment
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="consulting/application-design.html"
-                                class="mobiledropdown-link"
-                              >
-                                Application Design & Deployment
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/enterprise-resource.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Enterprise Resource Planning
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="consulting/enterprise-resource.html"
-                                class="mobiledropdown-link"
-                              >
-                                Enterprise Resource Planning
-                              </a>
-                            </li>
-
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="consulting/project-management.html"
-                                class="mobiledropdown-link"
-                              >
-                                Project Management
-                              </a>
-                            </li>
-                          </ul>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="consulting/project-management.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Project Management
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <!-- INDUSTRIES-DROPDOWN -->
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button
-                          class="accordion-button collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#collapseIndustries"
-                          aria-expanded="false"
-                          aria-controls="collapseIndustries"
+                      <!-- INDUSTRIES-DROPDOWN -->
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button
+                            class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#collapseIndustries"
+                            aria-expanded="false"
+                            aria-controls="collapseIndustries"
+                          >
+                            Industries
+                          </button>
+                        </h2>
+
+                        <div
+                          id="collapseIndustries"
+                          class="accordion-collapse collapse"
+                          data-bs-parent="#accordionDropdownMenu"
                         >
-                          Industries
-                        </button>
-                      </h2>
+                          <div class="accordion-body">
+                            <ul class="mobiledropdown">
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/banking.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Banking & NBFIs
+                                </a>
+                              </li>
 
-                      <div
-                        id="collapseIndustries"
-                        class="accordion-collapse collapse"
-                        data-bs-parent="#accordionDropdownMenu"
-                      >
-                        <div class="accordion-body">
-                          <ul class="mobiledropdown">
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="industries/banking.html"
-                                class="mobiledropdown-link"
-                              >
-                                Banking & NBFIs
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/telecommunication.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Telecommunication
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="industries/telecommunication.html"
-                                class="mobiledropdown-link"
-                              >
-                                Telecommunication
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/government.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Government
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="industries/government.html"
-                                class="mobiledropdown-link"
-                              >
-                                Government
-                              </a>
-                            </li>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/health.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Health & Pharmaceuticals
+                                </a>
+                              </li>
 
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="industries/health.html"
-                                class="mobiledropdown-link"
-                              >
-                                Health & Pharmaceuticals
-                              </a>
-                            </li>
-
-                            <li class="mobiledropdown-item">
-                              <a
-                                href="industries/medium.html"
-                                class="mobiledropdown-link"
-                              >
-                                Medium and Large Enterprises
-                              </a>
-                            </li>
-                          </ul>
+                              <li class="mobiledropdown-item">
+                                <a
+                                  href="industries/medium.html"
+                                  class="mobiledropdown-link"
+                                >
+                                  Medium and Large Enterprises
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -520,485 +522,505 @@
                 </div>
               </div>
             </div>
-          </div>
-          <!-- MOBILE-MENU-END -->
+            <!-- MOBILE-MENU-END -->
 
-          <!-- BRAND-LOGO-START -->
-          <div class="logosize">
-            <a href="index.html" class="brandlogo">
-              <img src="assets/images/logo/logo.png" alt="BRAND-LOGO" />
-            </a>
-          </div>
-          <!-- BRAND-LOGO-END -->
-
-          <!-- DESKTOP-MENU-START -->
-          <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
-            <div class="desktopmenu">
-              <ul class="desktoplist">
-                <li class="desktoplist-item">
-                  <a href="index.html" class="homelink activelink">Home</a>
-                </li>
-
-                <!-- ABOUT-DROPDOWN -->
-                <li class="desktoplist-item">
-                  <a href="#" class="desktoplist-link">
-                    <span class="text">About</span>
-                    <span class="linkicon">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        color="#fff"
-                        height="18"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        style="color: rgb(255, 255, 255)"
-                      >
-                        <path
-                          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
-                        ></path>
-                      </svg>
-                    </span>
-                  </a>
-
-                  <!-- ABOUT-DROPDOWN-CONTENT -->
-                  <div class="desktopdropdown">
-                    <div class="desktopdropdown-header">
-                      <h2 class="dropdowntitle">About</h2>
-                    </div>
-
-                    <div class="desktopdropdown-body">
-                      <ul class="dropdownlist">
-                        <li class="dropdownlist-item">
-                          <a
-                            href="about/tech-novelty.html"
-                            class="dropdownlist-link"
-                          >
-                            About tech.novelty solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="about/leadership.html"
-                            class="dropdownlist-link"
-                          >
-                            Leadership
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a href="about/vision.html" class="dropdownlist-link">
-                            Company vision
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="about/mission.html"
-                            class="dropdownlist-link"
-                          >
-                            Company mission
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a href="about/values.html" class="dropdownlist-link">
-                            Company values
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="about/partners.html"
-                            class="dropdownlist-link"
-                          >
-                            Our OEM Partners
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="about/customer.html"
-                            class="dropdownlist-link"
-                          >
-                            Our Customers
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="about/sustain.html"
-                            class="dropdownlist-link"
-                          >
-                            Corporate Sustainability
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <!-- PRODUCTS-DROPDOWN -->
-                <li class="desktoplist-item">
-                  <a href="#" class="desktoplist-link">
-                    <span class="text">Products</span>
-                    <span class="linkicon">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        color="#fff"
-                        height="18"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        style="color: rgb(255, 255, 255)"
-                      >
-                        <path
-                          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
-                        ></path>
-                      </svg>
-                    </span>
-                  </a>
-
-                  <!-- PRODUCTS-DROPDOWN-CONTENT -->
-                  <div class="desktopdropdown">
-                    <div class="desktopdropdown-header">
-                      <h2 class="dropdowntitle">Products</h2>
-                    </div>
-
-                    <div class="desktopdropdown-body">
-                      <ul class="dropdownlist">
-                        <li class="dropdownlist-item">
-                          <a
-                            href="products/microsoft.html"
-                            class="dropdownlist-link"
-                          >
-                            Microsoft Dynamics 365
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="products/oracle.html"
-                            class="dropdownlist-link"
-                          >
-                            Oracle AML/ALM
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <!-- SERVICES-DROPDOWN -->
-                <li class="desktoplist-item">
-                  <a href="#" class="desktoplist-link">
-                    <span class="text">Services</span>
-                    <span class="linkicon">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        color="#fff"
-                        height="18"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        style="color: rgb(255, 255, 255)"
-                      >
-                        <path
-                          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
-                        ></path>
-                      </svg>
-                    </span>
-                  </a>
-
-                  <!-- SERVICES-DROPDOWN-CONTENT -->
-                  <div class="desktopdropdown">
-                    <div class="desktopdropdown-header">
-                      <h2 class="dropdowntitle">Services</h2>
-                    </div>
-
-                    <div class="desktopdropdown-body">
-                      <ul class="dropdownlist">
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/infrastructure.html"
-                            class="dropdownlist-link"
-                          >
-                            Infrastructure Solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/managed.html"
-                            class="dropdownlist-link"
-                          >
-                            Managed Services
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/intelligent.html"
-                            class="dropdownlist-link"
-                          >
-                            Intelligent Network Solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/backup.html"
-                            class="dropdownlist-link"
-                          >
-                            Backup and Recovery Solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/digital.html"
-                            class="dropdownlist-link"
-                          >
-                            Digital Transformation
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/cybersecurity.html"
-                            class="dropdownlist-link"
-                          >
-                            Cybersecurity Assurance
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/data-analytics.html"
-                            class="dropdownlist-link"
-                          >
-                            Data Analytics & Insights
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/aiml.html"
-                            class="dropdownlist-link"
-                          >
-                            AI/ML Solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/emerging.html"
-                            class="dropdownlist-link"
-                          >
-                            Emerging Technologies and IoT
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/smart.html"
-                            class="dropdownlist-link"
-                          >
-                            Smart Office Solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="services/aml-alm.html"
-                            class="dropdownlist-link"
-                          >
-                            AML/ALM Solutions
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <!-- CONSULTING-DROPDOWN -->
-                <li class="desktoplist-item">
-                  <a href="#" class="desktoplist-link">
-                    <span class="text">Consulting</span>
-                    <span class="linkicon">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        color="#fff"
-                        height="18"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        style="color: rgb(255, 255, 255)"
-                      >
-                        <path
-                          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
-                        ></path>
-                      </svg>
-                    </span>
-                  </a>
-
-                  <!-- CONSULTING-DROPDOWN-CONTENT -->
-                  <div class="desktopdropdown">
-                    <div class="desktopdropdown-header">
-                      <h2 class="dropdowntitle">Consulting</h2>
-                    </div>
-
-                    <div class="desktopdropdown-body">
-                      <ul class="dropdownlist">
-                        <li class="dropdownlist-item">
-                          <a
-                            href="consulting/it-strategy.html"
-                            class="dropdownlist-link"
-                          >
-                            IT Strategy & Planning
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="consulting/cloud-computing.html"
-                            class="dropdownlist-link"
-                          >
-                            Cloud Computing Solutions
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="consulting/it-governance.html"
-                            class="dropdownlist-link"
-                          >
-                            IT Governance & Compliance
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="consulting/application-design.html"
-                            class="dropdownlist-link"
-                          >
-                            Application Design & Deployment
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="consulting/enterprise-resource.html"
-                            class="dropdownlist-link"
-                          >
-                            Enterprise Resource Planning
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="consulting/project-management.html"
-                            class="dropdownlist-link"
-                          >
-                            Project Management
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-
-                <!-- INDUSTRIES-DROPDOWN -->
-                <li class="desktoplist-item">
-                  <a href="#" class="desktoplist-link">
-                    <span class="text">Industries</span>
-                    <span class="linkicon">
-                      <svg
-                        stroke="currentColor"
-                        fill="currentColor"
-                        stroke-width="0"
-                        viewBox="0 0 512 512"
-                        color="#fff"
-                        height="18"
-                        width="18"
-                        xmlns="http://www.w3.org/2000/svg"
-                        style="color: rgb(255, 255, 255)"
-                      >
-                        <path
-                          d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
-                        ></path>
-                      </svg>
-                    </span>
-                  </a>
-
-                  <!-- INDUSTRIES-DROPDOWN-CONTENT -->
-                  <div class="desktopdropdown">
-                    <div class="desktopdropdown-header">
-                      <h2 class="dropdowntitle">Industries</h2>
-                    </div>
-
-                    <div class="desktopdropdown-body">
-                      <ul class="dropdownlist">
-                        <li class="dropdownlist-item">
-                          <a
-                            href="industries/banking.html"
-                            class="dropdownlist-link"
-                          >
-                            Banking & NBFIs
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="industries/telecommunication.html"
-                            class="dropdownlist-link"
-                          >
-                            Telecommunication
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="industries/government.html"
-                            class="dropdownlist-link"
-                          >
-                            Government
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="industries/health.html"
-                            class="dropdownlist-link"
-                          >
-                            Health & Pharmaceuticals
-                          </a>
-                        </li>
-
-                        <li class="dropdownlist-item">
-                          <a
-                            href="industries/medium.html"
-                            class="dropdownlist-link"
-                          >
-                            Medium and Large Enterprises
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </li>
-              </ul>
+            <!-- BRAND-LOGO-START -->
+            <div class="logosize">
+              <a href="index.html" class="brandlogo">
+                <img src="assets/images/logo/logo.png" alt="BRAND-LOGO" />
+              </a>
             </div>
+            <!-- BRAND-LOGO-END -->
+
+            <!-- DESKTOP-MENU-START -->
+            <div class="d-none d-lg-flex flex-grow-1 justify-content-center">
+              <div class="desktopmenu">
+                <ul class="desktoplist">
+                  <li class="desktoplist-item">
+                    <a href="index.html" class="homelink activelink">Home</a>
+                  </li>
+
+                  <!-- ABOUT-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">About</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- ABOUT-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">About</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/tech-novelty.html"
+                                  class="dropdownlist-link"
+                                >
+                                  About tech.novelty solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/leadership.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Leadership
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a href="about/vision.html" class="dropdownlist-link">
+                                  Company vision
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/mission.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Company mission
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a href="about/values.html" class="dropdownlist-link">
+                                  Company values
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/partners.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Our OEM Partners
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/customer.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Our Customers
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="about/sustain.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Corporate Sustainability
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- PRODUCTS-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Products</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- PRODUCTS-DROPDOWN-CONTENT -->
+                     <div class="dropdowncontent">
+                      <div class="techcontainer">
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Products</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="products/microsoft.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Microsoft Dynamics 365
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="products/oracle.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Oracle AML/ALM
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- SERVICES-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Services</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- SERVICES-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">                        
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Services</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/infrastructure.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Infrastructure Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/managed.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Managed Services
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/intelligent.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Intelligent Network Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/backup.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Backup and Recovery Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/digital.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Digital Transformation
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/cybersecurity.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Cybersecurity Assurance
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/data-analytics.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Data Analytics & Insights
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/aiml.html"
+                                  class="dropdownlist-link"
+                                >
+                                  AI/ML Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/emerging.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Emerging Technologies and IoT
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/smart.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Smart Office Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="services/aml-alm.html"
+                                  class="dropdownlist-link"
+                                >
+                                  AML/ALM Solutions
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- CONSULTING-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Consulting</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- CONSULTING-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">                        
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Consulting</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/it-strategy.html"
+                                  class="dropdownlist-link"
+                                >
+                                  IT Strategy & Planning
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/cloud-computing.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Cloud Computing Solutions
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/it-governance.html"
+                                  class="dropdownlist-link"
+                                >
+                                  IT Governance & Compliance
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/application-design.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Application Design & Deployment
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/enterprise-resource.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Enterprise Resource Planning
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="consulting/project-management.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Project Management
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <!-- INDUSTRIES-DROPDOWN -->
+                  <li class="desktoplist-item">
+                    <a href="#" class="desktoplist-link">
+                      <span class="text">Industries</span>
+                      <span class="linkicon">
+                        <svg
+                          stroke="currentColor"
+                          fill="currentColor"
+                          stroke-width="0"
+                          viewBox="0 0 512 512"
+                          color="#fff"
+                          height="18"
+                          width="18"
+                          xmlns="http://www.w3.org/2000/svg"
+                          style="color: rgb(255, 255, 255)"
+                        >
+                          <path
+                            d="M256 294.1L383 167c9.4-9.4 24.6-9.4 33.9 0s9.3 24.6 0 34L273 345c-9.1 9.1-23.7 9.3-33.1.7L95 201.1c-4.7-4.7-7-10.9-7-17s2.3-12.3 7-17c9.4-9.4 24.6-9.4 33.9 0l127.1 127z"
+                          ></path>
+                        </svg>
+                      </span>
+                    </a>
+
+                    <!-- INDUSTRIES-DROPDOWN-CONTENT -->
+                    <div class="dropdowncontent">
+                      <div class="techcontainer">
+                        <div class="desktopdropdown">
+                          <div class="desktopdropdown-header">
+                            <h2 class="dropdowntitle">Industries</h2>
+                          </div>
+    
+                          <div class="desktopdropdown-body">
+                            <ul class="dropdownlist">
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/banking.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Banking & NBFIs
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/telecommunication.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Telecommunication
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/government.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Government
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/health.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Health & Pharmaceuticals
+                                </a>
+                              </li>
+    
+                              <li class="dropdownlist-item">
+                                <a
+                                  href="industries/medium.html"
+                                  class="dropdownlist-link"
+                                >
+                                  Medium and Large Enterprises
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- DESKTOP-MENU-END -->
           </div>
-          <!-- DESKTOP-MENU-END -->
         </div>
       </div>
     </header>

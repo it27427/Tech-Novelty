@@ -424,6 +424,7 @@ figure {
 
 .headercontent {
   position: relative;
+  width: var(--size-full);
 }
 
 .btn-hamburger {
@@ -708,31 +709,31 @@ main {
   transform: rotateX(180deg);
 }
 
-.headercontent .desktopdropdown {
+.headercontent .dropdowncontent {
+  background: var(--black);
+  opacity: 0.8;
+  padding-block: 4rem;
+  display: none;
   position: absolute;
   top: 100%;
   left: 0;
   width: var(--size-full);
   height: 70vh;
-}
-
-.desktopdropdown {
-  display: none;
-  flex-direction: column;
-  gap: 1.5rem;
-  background: var(--black);
-  opacity: 0.8;
-  padding-block: 4rem;
-  z-index: 11;
-  transition: top 0.6s ease-out;
-
   animation-duration: var(--durations-slower);
   animation-fill-mode: both;
   animation-name: slideUp;
+  transition: top 0.6s ease-out;
+  z-index: 11;
 }
 
-.desktoplist-item:hover .desktopdropdown {
+.desktopdropdown {
   display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.desktoplist-item:hover .dropdowncontent {
+  display: block;
 }
 
 .dropdowntitle {
