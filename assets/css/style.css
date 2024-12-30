@@ -1434,18 +1434,44 @@ main {
 
 /* CAREER-SECTINON */
 .career {
+  background: var(--careerbg),
+    url(../images/career/career.jpg) no-repeat center center / cover;
+  min-height: auto;
+  padding-block: 6rem;
 }
 
 .careercontent {
+  margin-left: 10%;
 }
 
 .careertitle {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .careerinfo {
+  position: relative;
+  margin-left: 2rem;
+  padding-block: 0.1rem;
+}
+
+.careerinfo::before {
+  background: var(--primary-bg);
+  position: absolute;
+  content: '';
+  top: 0;
+  left: -2rem;
+  width: 0.125rem;
+  height: 100%;
 }
 
 .careertext {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-block: 1rem;
 }
 
 /* FOOTER-COMPONENT */
@@ -1754,6 +1780,18 @@ main {
   .industriestext {
     font-size: 1rem;
   }
+
+  .careercontent {
+    margin-left: 20%;
+  }
+
+  .careertitle {
+    font-size: 1.75rem;
+  }
+
+  .careertext {
+    font-size: 1rem;
+  }
 }
 
 /* MIN-WIDTH (1024PX) */
@@ -1862,6 +1900,14 @@ main {
   .cardconsult-title {
     font-size: 3rem;
   }
+
+  .careercontent {
+    margin-left: 40%;
+  }
+
+  .careertitle {
+    font-size: 2.5rem;
+  }
 }
 
 /* MIN-WIDTH (1280PX) */
@@ -1875,6 +1921,10 @@ main {
   }
 
   .consultingtitle {
+    font-size: 3rem;
+  }
+
+  .careertitle {
     font-size: 3rem;
   }
 }
