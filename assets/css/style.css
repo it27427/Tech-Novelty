@@ -1278,6 +1278,33 @@ main {
   background: var(--primary-bg);
 }
 
+/* CONSULTING-SECTION */
+.consultingsection {
+  padding-block: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  scroll-margin-top: 6.25rem;
+}
+
+.consultingcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.consultingtitle {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.consultingtext {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
 /* FOOTER-COMPONENT */
 .footer {
   display: flex;
@@ -1542,6 +1569,14 @@ main {
   .cardservicetext {
     font-size: 1rem;
   }
+
+  .consultingtitle {
+    font-size: 1.75rem;
+  }
+
+  .consultingtext {
+    font-size: 1rem;
+  }
 }
 
 /* MIN-WIDTH (1024PX) */
@@ -1642,6 +1677,10 @@ main {
   .servicescontent-body {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .consultingtitle {
+    font-size: 2.5rem;
+  }
 }
 
 /* MIN-WIDTH (1280PX) */
@@ -1651,6 +1690,10 @@ main {
   }
 
   .servicestitle {
+    font-size: 3rem;
+  }
+
+  .consultingtitle {
     font-size: 3rem;
   }
 }
