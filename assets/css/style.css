@@ -655,11 +655,6 @@ figure {
   box-shadow: none;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-}
-
 /* DESKTOP-MENU */
 .desktoplist {
   display: flex;
