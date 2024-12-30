@@ -1309,6 +1309,14 @@ main {
   position: relative;
 }
 
+.cardconsult-thumbnail img {
+  object-fit: cover;
+  border-radius: 0.375rem;
+  box-shadow: var(--shadows-sm);
+  width: var(--size-full);
+  height: 100%;
+}
+
 .cardconsult-details {
   position: absolute;
   top: 50%;
@@ -1367,6 +1375,61 @@ main {
   background: var(--black);
   border-radius: 100%;
   padding: 0.6rem;
+}
+
+/* INDUSTRIES-SECTION */
+.industries {
+  padding-block: 3rem;
+  scroll-margin-top: 6.25rem;
+}
+
+.industriescontent {
+  width: var(--size-full);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.industriestitle {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  position: relative;
+  margin-left: 1.25rem;
+}
+
+.industriestitle::before {
+  content: '';
+  position: absolute;
+  top: 0.125rem;
+  left: -1.25rem;
+  width: 0.375rem;
+  height: 1.25rem;
+  background: var(--primary-bg);
+}
+
+.accordion-item:first-of-type > .accordion-header .accordion-button {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.industriescontent .accordion-button {
+  font-size: 1rem;
+  font-weight: 500;
+  padding-block: 1rem;
+  padding-inline: 0;
+}
+
+.industriescontent .accordion-item {
+  border-bottom: solid 0.0667rem var(--white);
+}
+
+.industriescontent .accordion-body {
+  padding: 1rem 0;
+}
+
+.industriestext {
+  font-size: 0.875rem;
 }
 
 /* FOOTER-COMPONENT */
@@ -1651,6 +1714,28 @@ main {
   }
 
   .cardconlist-item {
+    font-size: 1rem;
+  }
+
+  .industriescontent {
+    width: 70%;
+    margin-inline: auto;
+  }
+
+  .industriestitle {
+    font-size: 3rem;
+  }
+
+  .industriestitle::before {
+    top: 0.625rem;
+    height: 2.5rem;
+  }
+
+  .industriescontent .accordion-button {
+    font-size: 1.25rem;
+  }
+
+  .industriestext {
     font-size: 1rem;
   }
 }
