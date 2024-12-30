@@ -16,6 +16,10 @@
   --footer-text: rgb(233, 233, 233);
   --primary-font: 'Open Sans', serif;
 
+  --card-1-bg: #80c4e9;
+  --card-2-bg: #c4d7ff;
+  --card-3-bg: #86d290;
+
   /* GRADIENT-BACKGROUNDS */
   --careerbg: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
   --contact-bg: linear-gradient(rgba(0, 0, 0, 0.9), rgba(8, 4, 39, 0.9));
@@ -864,7 +868,7 @@ main {
   grid-template-columns: 1fr;
   gap: 3rem;
   padding-block: 3rem;
-  scroll-padding-top: 100px;
+  scroll-padding-top: 6.25rem;
 }
 
 .about-thumbnail {
@@ -931,7 +935,7 @@ main {
   flex-direction: column;
   gap: 1rem;
   padding-block: 3rem;
-  scroll-margin-top: 200px;
+  scroll-margin-top: 12.5rem;
 }
 
 .missionvissiontitle {
@@ -993,6 +997,117 @@ main {
   object-fit: conver;
   width: var(--size-full);
   border-radius: 0.25rem;
+}
+
+/* VALUE-CREATE-SECTION */
+.valuecreate {
+  border-bottom: solid 0.0625rem var(--primary-bg);
+  padding-block: 3rem;
+}
+
+.valuecreate-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.valuecreatetitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  white-space: normal;
+}
+
+.valuecreatedetails {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.cardvalue {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: var(--size-full);
+  height: 100%;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  border-radius: 0.125rem;
+}
+
+.cardvalue .cardtitle {
+  color: var(--black);
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.cardvalue .cardtext {
+  color: var(--black);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: left;
+}
+
+.card-1 {
+  background: var(--card-1-bg);
+}
+
+.card-2 {
+  background: var(--card-2-bg);
+}
+
+.card-3 {
+  background: var(--card-3-bg);
+}
+
+/* SERVICES-SECTION */
+.services {
+  padding-block: 3rem;
+  scroll-margin-top: 6.25rem;
+}
+
+.servicestitle {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 2rem;
+}
+
+.servicestitle {
+  font-size: 1.75rem;
+}
+
+.servicescontent-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.servicescontent-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 2rem;
+}
+
+.btn-showless {
+  background: none;
+  border: solid 0.0625rem var(--footer-border);
+  border-radius: 1.5rem;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: 1rem 2rem;
+  width: 8.125rem;
+  height: 2.5rem;
+  transition: 0.3s;
+}
+
+.btn-showless:hover {
+  background: var(--primary-bg);
 }
 
 /* FOOTER-COMPONENT */
@@ -1230,6 +1345,27 @@ main {
   .missionvisiontext {
     font-size: 0.875rem;
   }
+
+  .valuecreatetitle {
+    font-size: 1.5rem;
+    white-space: pre-line;
+  }
+
+  .valuecreatedetails {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardvalue .cardtitle {
+    font-size: 1.5rem;
+  }
+
+  .cardvalue .cardtext {
+    font-size: 1rem;
+  }
+
+  .servicescontent-body {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* MIN-WIDTH (1024PX) */
@@ -1314,11 +1450,31 @@ main {
   .missionvisiontext {
     font-size: 1rem;
   }
+
+  .valuecreatetitle {
+    font-size: 1.75rem;
+  }
+
+  .valuecreatedetails {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .servicestitle {
+    font-size: 2.5rem;
+  }
+
+  .servicescontent-body {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /* MIN-WIDTH (1280PX) */
 @media screen and (min-width: 80) {
   .abouttitle {
+    font-size: 3rem;
+  }
+
+  .servicestitle {
     font-size: 3rem;
   }
 }
