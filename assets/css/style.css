@@ -372,6 +372,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: inherit;
   word-wrap: break-word;
   -webkit-tap-highlight-color: transparent;
 }
@@ -401,12 +402,14 @@ button {
 }
 
 a {
+  font-family: inherit;
   display: inline-block;
   text-decoration: none;
 }
 
 ul,
 ol {
+  font-family: inherit;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -426,12 +429,8 @@ h6,
 p,
 figure {
   margin: 0;
-  /* text-wrap: balance; */
+  font-family: inherit;
 }
-
-/* p {
-  text-wrap: pretty;
-} */
 
 /* UTILITIES */
 .techcontainer {
