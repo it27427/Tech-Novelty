@@ -2031,10 +2031,6 @@ main {
     width: 60% !important;
   }
 
-  .abouttitle {
-    font-size: 2.5rem;
-  }
-
   .aboutsubtitle {
     font-size: 1.75rem;
   }
@@ -2067,15 +2063,27 @@ main {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .servicestitle {
-    font-size: 2.5rem;
-  }
-
   .servicescontent-body {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .abouttitle {
+    font-size: 2.5rem;
+  }
+
+  .servicestitle {
+    font-size: 2.5rem;
+  }
+
   .consultingtitle {
+    font-size: 2.5rem;
+  }
+
+  .careertitle {
+    font-size: 2.5rem;
+  }
+
+  .partnertitle {
     font-size: 2.5rem;
   }
 
@@ -2087,21 +2095,13 @@ main {
     margin-left: 40%;
   }
 
-  .careertitle {
-    font-size: 2.5rem;
-  }
-
-  .partnertitle {
-    font-size: 2.5rem;
-  }
-
   .contact-thumbnail {
     min-height: 100%;
   }
 }
 
 /* MIN-WIDTH (1280PX) */
-@media screen and (min-width: 80) {
+@media screen and (min-width: 80rem) {
   .abouttitle {
     font-size: 3rem;
   }
