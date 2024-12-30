@@ -1305,6 +1305,70 @@ main {
   font-weight: 400;
 }
 
+.cardconsult-thumbnail {
+  position: relative;
+}
+
+.cardconsult-details {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.cardconsult-title {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cardconsultext {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cardconlist-item {
+  color: var(--white);
+  font-weight: 0.875rem;
+  font-weight: 400;
+}
+
+.consultingsection-body {
+  position: relative;
+}
+
+.conactionbuttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 95%;
+  margin-inline: auto;
+  height: 3rem;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.conactionbuttons button {
+  background: var(--black);
+  border-radius: 100%;
+  padding: 0.6rem;
+}
+
 /* FOOTER-COMPONENT */
 .footer {
   display: flex;
@@ -1577,6 +1641,18 @@ main {
   .consultingtext {
     font-size: 1rem;
   }
+
+  .cardconsult-title {
+    font-size: 2rem;
+  }
+
+  .cardconsultext {
+    font-size: 1.5rem;
+  }
+
+  .cardconlist-item {
+    font-size: 1rem;
+  }
 }
 
 /* MIN-WIDTH (1024PX) */
@@ -1680,6 +1756,10 @@ main {
 
   .consultingtitle {
     font-size: 2.5rem;
+  }
+
+  .cardconsult-title {
+    font-size: 3rem;
   }
 }
 
