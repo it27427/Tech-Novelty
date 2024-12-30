@@ -858,6 +858,73 @@ main {
   font-weight: 200;
 }
 
+/* ABOUT-SECTION */
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  padding-block: 3rem;
+  scroll-padding-top: 100px;
+}
+
+.about-thumbnail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100%;
+}
+
+.about-thumbnail img {
+  object-fit: contain;
+  height: 100%;
+}
+
+.abouttitle {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.aboutsubtitle {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.abouttext {
+  color: var(--white);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+.btn-learnmore {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-learnmore .btntext {
+  color: var(--white);
+  font-size: 1rem;
+}
+
+.btn-learnmore .btnicon {
+  width: 1.125rem;
+  height: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block-start: 0.25rem;
+  transition: 0.3s;
+}
+
+.btn-learnmore:hover .btnicon {
+  margin-inline-start: 0.25rem;
+}
+
 /* FOOTER-COMPONENT */
 .footer {
   display: flex;
@@ -1047,6 +1114,30 @@ main {
   .swiper-slide-active {
     width: 60% !important;
   }
+
+  .abouttitle {
+    font-size: 1.75rem;
+  }
+
+  .aboutsubtitle {
+    font-size: 1.5rem;
+  }
+
+  .abouttext {
+    font-size: 0.875rem;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .btn-learnmore .btntext {
+    font-size: 1.2rem;
+  }
+
+  .about-thumbnail {
+    height: 80%;
+  }
 }
 
 /* MIN-WIDTH (1024PX) */
@@ -1103,10 +1194,30 @@ main {
   .swiper-slide-active {
     width: 60% !important;
   }
+
+  .abouttitle {
+    font-size: 2.5rem;
+  }
+
+  .aboutsubtitle {
+    font-size: 1.75rem;
+  }
+
+  .abouttext {
+    font-size: 1rem;
+  }
+
+  .about-thumbnail {
+    height: 70%;
+  }
 }
 
 /* MIN-WIDTH (1280PX) */
-/* @media screen and (min-width: 80) {} */
+@media screen and (min-width: 80) {
+  .abouttitle {
+    font-size: 3rem;
+  }
+}
 
 /* KEYFRAME-ANIMATIONS */
 @keyframes slideDown {
@@ -1131,8 +1242,4 @@ main {
   0% {
     transform: translateY(2.25rem);
   }
-}
-
-main {
-  min-height: 400vh;
 }
