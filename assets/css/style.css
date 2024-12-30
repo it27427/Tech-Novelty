@@ -6,7 +6,7 @@
   --headerbg: #363e28;
   --darkbg: #09090b;
   --copyright-bg: #070422;
-  --partnercard-bg: #202020;
+  --partnercard-bg: rgb(32, 32, 32);
   --primary-border: hsl(60, 1%, 38%);
   --footer-border: rgb(97, 97, 96);
   --oempartner-bg: #80c4e9;
@@ -1474,6 +1474,83 @@ main {
   margin-block: 1rem;
 }
 
+/* PARTNER-SECTION */
+.partnersection {
+  padding-block: 3rem;
+  scroll-margin-top: 6.25rem;
+}
+
+.partnersectioncontent {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.partnersectioncontent-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.partnertitle {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.partnertext {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.partnersectioncontent-body {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.cardpartner {
+  height: auto;
+  padding-inline: 2rem;
+  padding-block: 4rem;
+  background: var(--partnercard-bg);
+  border-radius: 0.125rem;
+}
+
+.cardimage {
+  height: auto;
+  border-radius: 0.125rem;
+}
+
+.cardpartnertitle {
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 400;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.cardpartnertitle::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 1.5rem;
+  height: 0.25rem;
+  background: var(--bg-currentcolor);
+}
+
+.cardpartnersubtitle {
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* CONTACT-SECTION */
+.contact {
+}
+
 /* FOOTER-COMPONENT */
 .footer {
   display: flex;
@@ -1792,6 +1869,26 @@ main {
   .careertext {
     font-size: 1rem;
   }
+
+  .partnertitle {
+    font-size: 1.75rem;
+  }
+
+  .partnertext {
+    font-size: 1rem;
+  }
+
+  .partnersectioncontent-body {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cardpartner {
+    height: 18.75rem;
+  }
+
+  .cardimage {
+    height: 18.75rem;
+  }
 }
 
 /* MIN-WIDTH (1024PX) */
@@ -1908,6 +2005,10 @@ main {
   .careertitle {
     font-size: 2.5rem;
   }
+
+  .partnertitle {
+    font-size: 2.5rem;
+  }
 }
 
 /* MIN-WIDTH (1280PX) */
@@ -1925,6 +2026,10 @@ main {
   }
 
   .careertitle {
+    font-size: 3rem;
+  }
+
+  .partnertitle {
     font-size: 3rem;
   }
 }
