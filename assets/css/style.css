@@ -1784,10 +1784,59 @@ figure {
 }
 
 /* ABOUT-PAGE */
+.bannersection {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/banner/banner.jpg) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.aboutus {
+  padding-block: 4rem;
+}
+
+.sectiontitle {
+  color: var(--white);
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sectionsubtitle {
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding-block: 1rem;
+  text-align: center;
+}
+
+.sectiondetail {
+  padding-inline: 1rem;
+}
+
+.sectiontext {
+  color: var(--white);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  text-align: center;
+}
 
 /* RESPONSIVE MEDIA-QUERIES */
 /* MIN-WIDTH (768PX) */
 @media screen and (min-width: 48rem) {
+  .sectiontitle {
+    font-size: 1.75rem;
+  }
+
+  .sectionsubtitle {
+    font-size: 1.5rem;
+  }
+
+  .sectiontext {
+    font-size: 0.875rem;
+  }
+
   .footerlist-link {
     font-size: 0.875rem;
   }
@@ -1996,6 +2045,22 @@ figure {
 
 /* MIN-WIDTH (1024PX) */
 @media screen and (min-width: 64rem) {
+  .sectiontitle {
+    font-size: 2.5rem;
+  }
+
+  .sectionsubtitle {
+    font-size: 1.75rem;
+  }
+
+  .sectiontext {
+    font-size: 1rem;
+  }
+
+  .sectiondetail {
+    padding-inline: 8rem;
+  }
+
   .techcontainer {
     padding-inline: 6rem;
   }
@@ -2124,6 +2189,14 @@ figure {
 
 /* MIN-WIDTH (1280PX) */
 @media screen and (min-width: 80rem) {
+  .sectiontitle {
+    font-size: 3rem;
+  }
+
+  .sectiondetail {
+    padding-inline: 12rem;
+  }
+
   .about-thumbnail {
     height: 60%;
   }
