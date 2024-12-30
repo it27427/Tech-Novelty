@@ -1792,6 +1792,14 @@ figure {
   background-position: center center;
 }
 
+.bannermission {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/about/mission/mission.jpg) no-repeat center center / cover;
+  background-position: center center;
+}
+
 .aboutus {
   padding-block: 4rem;
 }
