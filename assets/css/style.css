@@ -35,6 +35,14 @@
       content-box exclude,
     linear-gradient(rgb(255, 255, 255) 0, rgb(255, 255, 255) 0);
 
+  --servicebg: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+  --servicehoverbg: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.1));
+  --service-hover-bg: linear-gradient(
+    90deg,
+    rgb(0, 116, 199) 0%,
+    rgb(184, 134, 203) 100%
+  );
+
   /* THEME-COLORS */
   --color-transparent: transparent;
   --color-current: currentColor;
@@ -1081,6 +1089,162 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  max-height: 25rem;
+  overflow: hidden;
+}
+
+.cardservice {
+  background-position: center center;
+  border-radius: 0.125rem;
+  cursor: pointer;
+  min-height: 25rem;
+  position: relative;
+  padding: 2rem;
+  transition: background 0.3s ease-in-out;
+}
+
+.cardservicetitle {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.cardservicetext {
+  color: var(--white);
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.service-1 {
+  background: var(--servicebg),
+    url(../images/services/one.webp) no-repeat center center/cover;
+}
+
+.service-1:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/one.webp) no-repeat center center/cover;
+}
+
+.service-2 {
+  background: var(--servicebg),
+    url(../images/services/two.png) no-repeat center center/cover;
+}
+
+.service-2:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/two.png) no-repeat center center/cover;
+}
+
+.service-3 {
+  background: var(--servicebg),
+    url(../images/services/three.png) no-repeat center center/cover;
+}
+
+.service-3:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/three.png) no-repeat center center/cover;
+}
+
+.service-4 {
+  background: var(--servicebg),
+    url(../images/services/four.webp) no-repeat center center/cover;
+}
+
+.service-4:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/four.webp) no-repeat center center/cover;
+}
+
+.service-5 {
+  background: var(--servicebg),
+    url(../images/services/digital.webp) no-repeat center center/cover;
+}
+
+.service-5:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/digital.webp) no-repeat center center/cover;
+}
+
+.service-6 {
+  background: var(--servicebg),
+    url(../images/services/six.webp) no-repeat center center/cover;
+}
+
+.service-6:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/six.webp) no-repeat center center/cover;
+}
+
+.service-7 {
+  background: var(--servicebg),
+    url(../images/services/seven.webp) no-repeat center center/cover;
+}
+
+.service-7:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/seven.webp) no-repeat center center/cover;
+}
+
+.service-8 {
+  background: var(--servicebg),
+    url(../images/services/eight.webp) no-repeat center center/cover;
+}
+
+.service-8:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/eight.webp) no-repeat center center/cover;
+}
+
+.service-9 {
+  background: var(--servicebg),
+    url(../images/services/nine.webp) no-repeat center center/cover;
+}
+
+.service-9:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/nine.webp) no-repeat center center/cover;
+}
+
+.service-10 {
+  background: var(--servicebg),
+    url(../images/services/six.webp) no-repeat center center/cover;
+}
+
+.service-10:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/six.webp) no-repeat center center/cover;
+}
+
+.service-11 {
+  background: var(--servicebg),
+    url(../images/services/one.webp) no-repeat center center/cover;
+}
+
+.service-11:hover {
+  background: var(--servicehoverbg),
+    url(../images/services/one.webp) no-repeat center center/cover;
+}
+
+.cardservice::before {
+  background: var(--color-transparent);
+  border-radius: inherit;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.125rem;
+  mask: linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px)
+      content-box exclude,
+    linear-gradient(rgb(255, 255, 255) 0px, rgb(255, 255, 255) 0px);
+  transition: background 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.cardservice:hover::before {
+  background: var(--service-hover-bg);
 }
 
 .servicescontent-footer {
@@ -1365,6 +1529,14 @@ main {
 
   .servicescontent-body {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cardservicetitle {
+    font-size: 1.5rem;
+  }
+
+  .cardservicetext {
+    font-size: 1rem;
   }
 }
 
