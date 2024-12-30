@@ -887,6 +887,12 @@ figure {
   height: 100%;
 }
 
+.aboutdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .abouttitle {
   color: var(--white);
   font-weight: 700;
@@ -1299,6 +1305,10 @@ figure {
   font-weight: 400;
 }
 
+.cardconsult {
+  padding-inline: 1rem;
+}
+
 .cardconsult-thumbnail {
   position: relative;
 }
@@ -1308,7 +1318,7 @@ figure {
   border-radius: 0.375rem;
   box-shadow: var(--shadows-sm);
   width: var(--size-full);
-  height: 100%;
+  height: 80vh;
 }
 
 .cardconsult-details {
@@ -1343,7 +1353,7 @@ figure {
 
 .cardconlist-item {
   color: var(--white);
-  font-weight: 0.875rem;
+  font-size: 0.875rem;
   font-weight: 400;
 }
 
@@ -1353,10 +1363,11 @@ figure {
 
 .conactionbuttons {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 94%;
+  bottom: 0;
+  left: 70%;
+  width: 25%;
   transform: translate(-50%, -50%);
-  width: 95%;
   margin-inline: auto;
   height: 3rem;
   z-index: 200;
@@ -1772,6 +1783,8 @@ figure {
   font-size: inherit;
 }
 
+/* ABOUT-PAGE */
+
 /* RESPONSIVE MEDIA-QUERIES */
 /* MIN-WIDTH (768PX) */
 @media screen and (min-width: 48rem) {
@@ -1800,6 +1813,16 @@ figure {
     font-size: 1rem;
   }
 
+  .cardconsult {
+    padding-inline: 1rem;
+  }
+
+  .conactionbuttons {
+    top: 50%;
+    left: 50%;
+    width: 95%;
+  }
+
   .swiper-slide {
     width: 60% !important;
   }
@@ -1823,6 +1846,7 @@ figure {
   .about-content {
     grid-template-columns: 1fr 1fr;
   }
+
   .btn-learnmore .btntext {
     font-size: 1.2rem;
   }
@@ -2061,6 +2085,10 @@ figure {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .cardconsult-thumbnail img {
+    height: 100%;
+  }
+
   .abouttitle {
     font-size: 2.5rem;
   }
@@ -2096,6 +2124,10 @@ figure {
 
 /* MIN-WIDTH (1280PX) */
 @media screen and (min-width: 80rem) {
+  .about-thumbnail {
+    height: 60%;
+  }
+
   .abouttitle {
     font-size: 3rem;
   }
