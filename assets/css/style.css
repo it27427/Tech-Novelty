@@ -1093,6 +1093,10 @@ main {
   overflow: hidden;
 }
 
+.expanded {
+  max-height: 100%;
+}
+
 .cardservice {
   background-position: center center;
   border-radius: 0.125rem;
