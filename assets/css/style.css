@@ -1919,6 +1919,30 @@ figure {
   background-position: center center;
 }
 
+.cloudbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/consultingSlider/six.jpg) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.itbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/consultingSlider/two.jpg) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.applicationbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/consultingSlider/three.jpg) no-repeat center center / cover;
+  background-position: center center;
+}
+
 .aboutus {
   padding-block: 4rem;
 }
