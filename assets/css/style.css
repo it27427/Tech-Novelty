@@ -1800,6 +1800,22 @@ figure {
   background-position: center center;
 }
 
+.productsbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/industries/one.jpg) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.servicesbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/one.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
 .aboutus {
   padding-block: 4rem;
 }
