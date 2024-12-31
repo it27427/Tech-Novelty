@@ -1855,6 +1855,70 @@ figure {
   background-position: center center;
 }
 
+.managedbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/two.png) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.intelligentbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/three.png) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.backupbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/four.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.digitalbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/digital.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.cyberbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/six.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.analyticsbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/seven.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.aimlbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/eight.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
+.emergingbanner {
+  width: var(--size-full);
+  height: 50vh;
+  background: var(--careerbg),
+    url(../images/services/nine.webp) no-repeat center center / cover;
+  background-position: center center;
+}
+
 .aboutus {
   padding-block: 4rem;
 }
